@@ -34,16 +34,14 @@ redirect_from:
 <span class='anchor' id='-xl'></span>
 
 # 🎓 Educations
-- Department of Astronomy, Xiamen University, China
-PhD in Astrophysics, Sep 2022 - Jun 2026 (excepted)
-• Supervisor @ XMU: Prof. Siyi, Feng
-• Area of Study: High-mass star formation at early stage
-- Purple Mountain Observatory, Chinese Academy of Sciences, China, Master
-in Astrophysics, Sep 2019 - Jun 2022
-• Thesis Title: Dense molecular gas and that correlated with infrared characteristics
-in NGC 1068 Supervisor: Prof. Yu, Gao
-• Area of Study: Star formation in the galaxies
-- Fuzhou University, China, Bachelor in Physics, Sep 2015 - Jun 2019
+- Department of Astronomy, Xiamen University, China  
+PhD in Astrophysics, Sep 2022 - Jun 2026 (excepted)  
+  - Supervisor @ XMU: Prof. Siyi, Feng
+  - Area of Study: High-mass star formation at early stage
+- Purple Mountain Observatory, Chinese Academy of Sciences, China, Master in Astrophysics, Sep 2019 - Jun 2022  
+  - Thesis Title: Dense molecular gas and that correlated with infrared characteristics in NGC 1068 Supervisor: Prof. Yu, Gao  
+  - Area of Study: Star formation in the galaxies  
+- Fuzhou University, China, Bachelor in Physics, Sep 2015 - Jun 2019  
  
 <span class='anchor' id='-lwzl'></span>
 
