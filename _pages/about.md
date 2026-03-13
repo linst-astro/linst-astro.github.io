@@ -28,7 +28,7 @@ redirect_from:
 - 涡流检测
 - 磁传感器
 - 无损检测装备开发
-   --> -->
+   --> 
 
 
 <span class='anchor' id='-xl'></span>
@@ -47,8 +47,14 @@ redirect_from:
 
 # 📝 Publications
 
-### Published
----
+<div class='paper-box'>
+<div class='paper-box-text' style="width:100%" markdown="1">
+
+- `Shuting Lin`, Siyi Feng, JunZhi Wang, et al. (submitted to AJ): “MIAO-ALMA: Shocks and Protostellar Outflows in 70µm-dark clumps with L/M < 1 L⊙/M⊙”.
+
+</div>
+</div>
+
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sensors 2022</div><img src='images/sensors2022.svg' alt="sym" width="100%"></div></div> -->
 <div class='paper-box'>
 <div class='paper-box-text' style="width:100%" markdown="1">
@@ -90,16 +96,9 @@ redirect_from:
 </div>
 </div>
 
-### Submitted
----
 
-<div class='paper-box'>
-<div class='paper-box-text' style="width:100%" markdown="1">
 
-- `Shuting Lin`, Siyi Feng, JunZhi Wang, et al. (submitted to AJ): “MIAO-ALMA: Shocks and Protostellar Outflows in 70µm-dark clumps with L/M < 1 L⊙/M⊙”.
 
-</div>
-</div>
 
 <!-- <div class='paper-box'>
 <div class='paper-box-text' style="width:100%" markdown="1">
