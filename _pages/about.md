@@ -101,13 +101,13 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'>
+<!-- <div class='paper-box'>
 <div class='paper-box-text' style="width:100%" markdown="1">
 
 - `Shuting Lin`, Siyi Feng, et al. in preparation: “Chemical and Kinematic Properties of Two Massive Clumps at Early and Evolved Stages in G34.74–0.12”.
 
 </div>
-</div>
+</div> -->
 
 
 
