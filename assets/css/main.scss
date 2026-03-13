@@ -91,20 +91,20 @@
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px #efefef solid;
-    padding: 0.3em 0; /* 上下间距整体减小 */
+    padding: 0.5em 0; /* 上下间距整体减小 */
 
     .paper-box-text {
         width: 100%;
         
         /* 针对内部所有段落和列表 */
         p, li, div {
-            margin: 0 0 0.3em 0; /* 底部间距 0.3em，更紧凑 */
-            line-height: 1;     /* 行高可调，默认 1.3 */
+            margin: 0 0 0.5em 0; /* 底部间距 0.3em，更紧凑 */
+            line-height: 1.3;     /* 行高可调，默认 1.3 */
         }
 
         /* 如果你使用 badge 或标题，也可以控制上下间距 */
         .badge {
-            margin-bottom: 0.3em;
+            margin-bottom: 0.5em;
         }
     }
 
