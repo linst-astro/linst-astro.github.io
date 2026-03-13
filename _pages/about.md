@@ -38,10 +38,6 @@ redirect_from:
 <span class='anchor' id='-lwzl'></span>
 
 # 📝 Publications
-
-<div class='paper-box'>
-<div class='paper-box-text' style="width:100%" markdown="1">
-
 - `Shuting Lin`, Siyi Feng, JunZhi Wang, et al. (submitted to AJ): “MIAO-ALMA: Shocks and Protostellar Outflows in 70µm-dark clumps with L/M < 1 L⊙/M⊙”.
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sensors 2022</div><img src='images/sensors2022.svg' alt="sym" width="100%"></div></div> -->
 
@@ -55,20 +51,6 @@ redirect_from:
 
 - Chunyi Zhang; Junfeng Wang; Qing-Hua Tan; Yu Gao; `Shuting Lin`; Xiaoyu Xu (2024), ApJL, 967, L25: “Subkiloparsec Scaling Relations between Hot Gas, Dense Gas, and Star Formation Rate in Five Nearby Star-forming Galaxies” doi:10.3847/2041-8213/ad4a69
 
-</div>
-</div>
-
-
-
-
-
-<!-- <div class='paper-box'>
-<div class='paper-box-text' style="width:100%" markdown="1">
-
-- `Shuting Lin`, Siyi Feng, et al. in preparation: “Chemical and Kinematic Properties of Two Massive Clumps at Early and Evolved Stages in G34.74–0.12”.
-
-</div>
-</div> -->
 
 
 
