@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-# Research Interests: 
+# Research Interests
 
 - High-mass star formation in the earliest stage  
 - Star formation in the nearby galaxies
