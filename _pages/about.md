@@ -51,7 +51,7 @@ redirect_from:
 ---
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sensors 2022</div><img src='images/sensors2022.svg' alt="sym" width="100%"></div></div> -->
 <div class='paper-box'>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box-text' style="width:100%" markdown="1">
 
 -	`Shuting Lin`, Siyi Feng, Zhi-Yu Zhang, et al. (2026), A&A, 707, A20: “The MALATANG Survey: Star Formation, Dense Gas, and AGN Feedback in NGC 1068”. doi:10.1051/0004-6361/202557780
 
@@ -59,7 +59,7 @@ redirect_from:
 </div>
 
 <div class='paper-box'>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box-text' style="width:100%" markdown="1">
 
 - `Shuting Lin`, Siyi Feng, Fengwei Xu, et al. (2025), ApJL, 992, L15: “A Dense Molecular Ringlike Structure in Gaseous CO Depletion Region G34.74-0.12”. doi:10.3847/2041-8213/ae0579
 
@@ -67,7 +67,7 @@ redirect_from:
 </div>
 
 <div class='paper-box'>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box-text' style="width:100%" markdown="1">
 
 - `Shuting Lin`, Siyi Feng, Patricio Sanhueza, et al. (2025), ApJ, 990, 229: “The ALMA Survey of 70 µm Dark High-mass Clumps in Early Stages (ASHES). XII. Unanchored Forked Stream in the Propagating Path of a Protostellar Outflow”. doi:10.3847/1538-4357/adf208
 
@@ -75,7 +75,7 @@ redirect_from:
 </div>
 
 <div class='paper-box'>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box-text' style="width:100%" markdown="1">
 
 - Kaho Morii, Patricio Sanhueza, +6, `Shuting Lin`, + 4 (2025), ApJ, (accepted): “The ALMA Survey of 70 µm Dark High-mass Clumps in Early Stages (ASHES). XIII. Core Mass Function, Lifetime, and Growth of Prestellar Cores” arXiv: 2512.00147
 
@@ -83,7 +83,7 @@ redirect_from:
 </div>
 
 <div class='paper-box'>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box-text' style="width:100%" markdown="1">
 
 - Chunyi Zhang; Junfeng Wang; Qing-Hua Tan; Yu Gao; `Shuting Lin`; Xiaoyu Xu (2024), ApJL, 967, L25: “Subkiloparsec Scaling Relations between Hot Gas, Dense Gas, and Star Formation Rate in Five Nearby Star-forming Galaxies” doi:10.3847/2041-8213/ad4a69
 
@@ -94,7 +94,7 @@ redirect_from:
 ---
 
 <div class='paper-box'>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box-text' style="width:100%" markdown="1">
 
 - `Shuting Lin`, Siyi Feng, JunZhi Wang, et al. (submitted to AJ): “MIAO-ALMA: Shocks and Protostellar Outflows in 70µm-dark clumps with L/M < 1 L⊙/M⊙”.
 
@@ -102,7 +102,7 @@ redirect_from:
 </div>
 
 <div class='paper-box'>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box-text' style="width:100%" markdown="1">
 
 - `Shuting Lin`, Siyi Feng, et al. in preparation: “Chemical and Kinematic Properties of Two Massive Clumps at Early and Evolved Stages in G34.74–0.12”.
 
