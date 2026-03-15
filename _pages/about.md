@@ -92,7 +92,7 @@ redirect_from:
 
 - IRAM 30-meter. Semester: 2025B, Application time: 14.4 hours. Title: Compensating for Missing Flux in the Initial Star-Forming Region IRDC G34.74-0.12. Status: Granted. (`Co-PI`)
 
-- EAVN. Grant time: 20 hours. Semester: 2024B, Title: Outflow, fragmentation, and multiplicity towards the high-mass disk candidate NGC7538 IRS9. Status: Observed. (`Co-I`)
+
 
 
 <span class='anchor' id='-conferences'></span>
