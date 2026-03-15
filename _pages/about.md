@@ -17,9 +17,10 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<p align="center">
-<img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="900">
-</p>
+<div align="center">
+<img src="images/carina-nebula-james-webb-telescope-0e6f4b6-e1657640050807.jpeg.webp" width="100%">
+</div>
+
 
 # 💡 Research Interests
 
