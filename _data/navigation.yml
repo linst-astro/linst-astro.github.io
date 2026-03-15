@@ -9,14 +9,14 @@ main:
   - title: "Publications"
     url: "#-publications"
 
-  - title: "Software &amp; Other Skills"
-    url: "#-skills"
-
   - title: "Observation Proposal"
     url: "#-proposals"
 
   - title: "Conference Talks &amp; Posters"
     url: "#-conferences"
+
+  - title: "Software &amp; Other Skills"
+    url: "#-skills"
 
 
 

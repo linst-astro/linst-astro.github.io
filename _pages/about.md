@@ -57,27 +57,7 @@ redirect_from:
 
 
 
-<span class='anchor' id='-skills'></span>
 
-# 🛠️ Software &amp; Other Skills
-- Astronomy Analysis Software:  
-  - CASA, CLASS/GILDAS, SAOimage DS9, Carta, MIRIAD, RADEX, XCLASS,
-  STARLINK  
-
-- Computer Programming:  
-  - Python, UNIX shell scripting, LATEX  
-
-- Data Reduction Experience &amp; Skills:  
-  - Calibration &amp; imaging of interferometric data: `VLA`, `ALMA`, `SMA`  
-  - Reduction &amp; analysis of single-dish data: `IRAM-30m`, `GBT`, `JCMT`  
-  - Combine interferometric data and single-dish data in UV domain  
-  - SDE fitting  
-  - Hyperfine structure fitting  
-  - RADEX and XCLASS modeling  
-
-- Spoken languages:  
-  - Chinese (mother tongue)  
-  - English (proficient)  
 
 
 
@@ -111,5 +91,23 @@ redirect_from:
 - Star Formation in Nearby and Distant Galaxies, Hefei, China, Aug. 2025. “MIAO-ALMA: Shocks and Protostellar Outflows in 70µm-dark clumps” (Oral Talk)
 
 - Annual Meeting of the Chinese Astronomical Society, Xiamen, China, Nov. 2025. “MIAO-ALMA: Shocks and Protostellar Outflows in 70µm-dark clumps” (Oral Talk)
+
+
+
+
+
+
+
+
+
+<span class='anchor' id='-skills'></span>
+
+# 🛠️ Software &amp; Other Skills
+- Astronomy Analysis Software:  
+  - CASA, CLASS/GILDAS, SAOimage DS9, Carta, MIRIAD, RADEX, XCLASS,
+  STARLINK  
+
+- Computer Programming:  
+  - Python, UNIX shell scripting, LATEX  
 
 
