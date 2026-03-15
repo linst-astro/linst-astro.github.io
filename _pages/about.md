@@ -42,7 +42,7 @@ redirect_from:
 - `Shuting Lin`, Siyi Feng, JunZhi Wang, et al. (submitted to AJ): “MIAO-ALMA: Shocks and Protostellar Outflows in 70µm-dark clumps with L/M < 1 L⊙/M⊙”.
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sensors 2022</div><img src='images/sensors2022.svg' alt="sym" width="100%"></div></div> -->
 
--	`Shuting Lin`, Siyi Feng, Zhi-Yu Zhang, et al. (2026), A&A, 707, A20: “The MALATANG Survey: Star Formation, Dense Gas, and AGN Feedback in NGC 1068”. doi:10.1051/0004-6361/202557780
+-	`Shuting Lin`, Siyi Feng, Zhi-Yu Zhang, et al. (2026), A&ampA, 707, A20: “The MALATANG Survey: Star Formation, Dense Gas, and AGN Feedback in NGC 1068”. doi:10.1051/0004-6361/202557780
 
 - `Shuting Lin`, Siyi Feng, Fengwei Xu, et al. (2025), ApJL, 992, L15: “A Dense Molecular Ringlike Structure in Gaseous CO Depletion Region G34.74-0.12”. doi:10.3847/2041-8213/ae0579
 
@@ -59,7 +59,7 @@ redirect_from:
 
 <span class='anchor' id='-skills'></span>
 
-# 🛠️ Software & Other Skills
+# 🛠️ Software &amp Other Skills
 - Astronomy Analysis Software:  
   - CASA, CLASS/GILDAS, SAOimage DS9, Carta, MIRIAD, RADEX, XCLASS,
   STARLINK  
@@ -67,9 +67,9 @@ redirect_from:
 - Computer Programming:  
   - Python, UNIX shell scripting, LATEX  
 
-- Data Reduction Experience & Skills:  
-  - Calibration & imaging of interferometric data: `VLA`, `ALMA`, `SMA`  
-  - Reduction & analysis of single-dish data: `IRAM-30m`, `GBT`, `JCMT`  
+- Data Reduction Experience &amp Skills:  
+  - Calibration &amp imaging of interferometric data: `VLA`, `ALMA`, `SMA`  
+  - Reduction &amp analysis of single-dish data: `IRAM-30m`, `GBT`, `JCMT`  
   - Combine interferometric data and single-dish data in UV domain  
   - SDE fitting  
   - Hyperfine structure fitting  
@@ -97,7 +97,7 @@ redirect_from:
 
 <span class='anchor' id='-conferences'></span>
 
-# 🏛️ Conference Talks & Posters
+# 🏛️ Conference Talks &amp Posters
 - Workshop on Molecular Astrochemistry, Wulumuqi, Xinjiang, China, Aug. 2023 ”Physicochemical Properties of the 70 µm Dark Cloud G34.74–0.12” (Oral Talk)
 
 - Star Formation in Nearby and Distant Galaxies, Kunming, China, Jul. 2023 ”Physical structure and gas motions towards IRDC G34.74-0.12” (Oral Talk)
@@ -115,7 +115,7 @@ redirect_from:
 
 <span class='anchor' id='-visits'></span>
 
-# 🤝 Research Trips & Visits
+# 🤝 Research Trips &amp Visits
 
 - `Academia Sinica Institute of Astronomy and Astrophysics (ASIAA)` Taiwan. Dec 2024    
   - Visiting Scholar–SMA data calibration
@@ -129,7 +129,7 @@ redirect_from:
 
 <span class='anchor' id='-works'></span>
 
-# 💼 Community Work & Outreach
+# 💼 Community Work &amp Outreach
 
-- LOC member & Teaching Assistant, Astrochemistry Summer school, Xiamen, Jul. 2025
+- LOC member &amp Teaching Assistant, Astrochemistry Summer school, Xiamen, Jul. 2025
 - Teaching Assistant, University Physics (Undergraduate Course), Spring Semester. 2023
