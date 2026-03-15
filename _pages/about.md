@@ -23,19 +23,20 @@ redirect_from:
 - Star formation in the nearby galaxies
 
 
-<span class='anchor' id='-xl'></span>
+<span class='anchor' id='-educations'></span>
 
 # 🎓 Educations
-- Department of Astronomy, Xiamen University, China  
- PhD in Astrophysics, Sep 2022 - Jun 2026 (excepted)  
+- `Department of Astronomy, Xiamen University`, China, PhD in Astrophysics, Sep 2022 - Jun 2026 (excepted)  
   - Supervisor @ XMU: Prof. Siyi, Feng
   - Area of Study: High-mass star formation at early stage
-- Purple Mountain Observatory, Chinese Academy of Sciences, China, Master in Astrophysics, Sep 2019 - Jun 2022  
+
+- `Purple Mountain Observatory, Chinese Academy of Sciences`, China, Master in Astrophysics, Sep 2019 - Jun 2022  
   - Thesis Title: Dense molecular gas and that correlated with infrared characteristics in NGC 1068 Supervisor: Prof. Yu, Gao  
-  - Area of Study: Star formation in the galaxies  
-- Fuzhou University, China, Bachelor in Physics, Sep 2015 - Jun 2019  
+  - Area of Study: Star formation in the galaxies 
+
+- `Fuzhou University`, China, Bachelor in Physics, Sep 2015 - Jun 2019  
  
-<span class='anchor' id='-lwzl'></span>
+<span class='anchor' id='-publications'></span>
 
 # 📝 Publications
 - `Shuting Lin`, Siyi Feng, JunZhi Wang, et al. (submitted to AJ): “MIAO-ALMA: Shocks and Protostellar Outflows in 70µm-dark clumps with L/M < 1 L⊙/M⊙”.
@@ -56,23 +57,79 @@ redirect_from:
 
 
 
-<!-- <span class='anchor' id='-ryjx'></span>
+<span class='anchor' id='-skills'></span>
 
-# 🏅 荣誉奖项
-- *2015.11* 获得 第十四届“挑战杯”全国大学生课外学术科技作品竞赛 `一等奖`  
-- *2015.06* 获得 第十三届“挑战杯”四川大学生课外学术科技作品竞赛 `一等奖` [[新闻]](https://www.sc.gov.cn/10462/10778/10876/2015/7/1/10341562.shtml)  
-- *2014.12* 获得 第四届全国大学生工程训练综合能力竞赛（四川赛区） `一等奖`  
+# 🛠️ Software & Other Skills
+- Astronomy Analysis Software:  
+  - CASA, CLASS/GILDAS, SAOimage DS9, Carta, MIRIAD, RADEX, XCLASS,
+  STARLINK  
 
-<span class='anchor' id='-xshy'></span>
+- Computer Programming:  
+  - Python, UNIX shell scripting, LATEX  
 
-# 🏛️ 学术会议
-- *2021.10*, 全国电磁无损检测技术研讨会 暨 中国机械工程学会无损检测分会电磁专业技术大会第十一届第四次全体会议, 陕西西安, 受邀报告
-- *2019.09*, 第十九届国际应用电磁学与力学会议 (ISEM 2019), 江苏南京, 海报
-- *2017.10*, 第六届中国国际管道会议 (CIPC 2017), 河北廊坊
+- Data Reduction Experience & Skills:  
+  - Calibration & imaging of interferometric data: `VLA`, `ALMA`, `SMA`  
+  - Reduction & analysis of single-dish data: `IRAM-30m`, `GBT`, `JCMT`  
+  - Combine interferometric data and single-dish data in UV domain  
+  - SDE fitting  
+  - Hyperfine structure fitting  
+  - RADEX and XCLASS modeling  
 
-<span class='anchor' id='-gzsx'></span>
+- Spoken languages:  
+  - Chinese (mother tongue)  
+  - English (proficient)  
 
-# 💻 工作实习
-- *2018.05 - 2020.02*, 重庆长江轴承股份有限公司, 重庆
-- *2020.11.25 - 2020.12.02*, 湖北新冶钢有限公司, 湖北黄石
-- *2017.6 - 2021.1*, 制造装备数字化国家工程研究中心, 湖北武汉 -->
+
+
+<span class='anchor' id='-proposals'></span>
+
+# 📑 Observation Proposal
+- ALMA. Obtain time: ACA 38 hours, TP 79 hours. Program ID: 2024.1.01696.S, Semester: 2024A, Title: The initial gas motions: Outflow and shock towards extremely young high-mass clumps. Status: Observed. (`PI`)
+
+- SMA. Obtain time: 8 hours. Program ID: 2024A-S029, Semester: 2024A, Title: Chemical complexity towards the initial star-forming region IRDC G34.74-0.12. Status: Observed. (`PI`)
+
+- NOEMA. Semester: 2025B, Application time: 14.0 hours. Title: Early to late: a comparable study of chemical complexity towards two massive star-forming regions within IRDC G34.74-0.12. Status: Granted. (`Co-PI`)
+
+- IRAM 30-meter. Semester: 2025B, Application time: 14.4 hours. Title: Compensating for Missing Flux in the Initial Star-Forming Region IRDC G34.74-0.12. Status: Granted. (`Co-PI`)
+
+- EAVN. Grant time: 20 hours. Semester: 2024B, Title: Outflow, fragmentation, and multiplicity towards the high-mass disk candidate NGC7538 IRS9. Status: Observed. (`Co-I`)
+
+
+<span class='anchor' id='-conferences'></span>
+
+# 🏛️ Conference Talks & Posters
+- Workshop on Molecular Astrochemistry, Wulumuqi, Xinjiang, China, Aug. 2023 ”Physicochemical Properties of the 70 µm Dark Cloud G34.74–0.12” (Oral Talk)
+
+- Star Formation in Nearby and Distant Galaxies, Kunming, China, Jul. 2023 ”Physical structure and gas motions towards IRDC G34.74-0.12” (Oral Talk)
+
+- Workshop on Molecular Clouds and Star Formation, Chongqing, China, Oct. 2023. ”Physicochemical Properties of the 70 µm Dark Cloud G34.74–0.12” (Poster)
+
+- The Second Cross-Strait Workshop on Radio Astronomy, Shanghai, China, Feb. 2024. ”Early-Stage Massive Star Formation in IRDC G34.74–0.12: Physical Structure and Gas Kinematics” (Oral Talk)
+
+- Workshop on Star Formation in the Milky Way and Nearby Galaxies, Nanning, China, Jul. 2024. ”Dense Molecular Ringlike Structure in Gaseous CO Depletion Region G34.74-0.12” (Oral Talk)
+
+- Star Formation in Nearby and Distant Galaxies, Hefei, China, Aug. 2025. “MIAO-ALMA: Shocks and Protostellar Outflows in 70µm-dark clumps” (Oral Talk)
+
+- Annual Meeting of the Chinese Astronomical Society, Xiamen, China, Nov. 2025. “MIAO-ALMA: Shocks and Protostellar Outflows in 70µm-dark clumps” (Oral Talk)
+
+
+<span class='anchor' id='-visits'></span>
+
+# 🤝 Research Trips & Visits
+
+- `Academia Sinica Institute of Astronomy and Astrophysics (ASIAA)` Taiwan. Dec 2024    
+  - Visiting Scholar–SMA data calibration
+
+- `Shanghai Astronomical Observatory`, Shanghai, China. Feb 2024  
+  - Visiting Scholar–VLA data calibration
+
+- `College of Physical Science and Engineering Technology, Guangxi University`, Guangxi, China. Jul. 2024  
+  - Visiting Scholar–Combining VLA and GBT data
+
+
+<span class='anchor' id='-works'></span>
+
+# 💼 Community Work & Outreach
+
+- LOC member & Teaching Assistant, Astrochemistry Summer school, Xiamen, Jul. 2025
+- Teaching Assistant, University Physics (Undergraduate Course), Spring Semester. 2023

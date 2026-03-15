@@ -4,16 +4,24 @@ main:
     url: "#about-me"
 
   - title: "Educations"
-    url: "#-xl"
+    url: "#-educations"
 
   - title: "Publications"
-    url: "#-lwzl"
+    url: "#-publications"
 
-  - title: "Honors and Awards"
-    url: "#-ryjx"
+  - title: "Software & Other Skills"
+    url: "#-skills"
 
-  - title: "Conferences"
-    url: "#-xshy"
+  - title: "Observation Proposal"
+    url: "#-proposals"
 
-  - title: "Internships"
-    url: "#-gzsx"
+  - title: "Conference Talks & Posters"
+    url: "#-conferences"
+
+  - title: "Research Trips & Visits"
+    url: "#-visits"
+
+  - title: "Community Work & Outreach"
+    url: "#-works"
+
+
