@@ -1,0 +1,17 @@
+/* 全局深色样式 */
+body {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+a {
+  color: #64b5f6 !important;
+}
+/* 修复图片反色 */
+img {
+  filter: invert(0) !important;
+}
+/* 导航/头部深色 */
+header, .site-header, .nav {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+}
