@@ -113,23 +113,3 @@ redirect_from:
 - Annual Meeting of the Chinese Astronomical Society, Xiamen, China, Nov. 2025. “MIAO-ALMA: Shocks and Protostellar Outflows in 70µm-dark clumps” (Oral Talk)
 
 
-<span class='anchor' id='-visits'></span>
-
-# 🤝 Research Trips &amp; Visits
-
-- `Academia Sinica Institute of Astronomy and Astrophysics (ASIAA)` Taiwan. Dec 2024    
-  - Visiting Scholar–SMA data calibration
-
-- `Shanghai Astronomical Observatory`, Shanghai, China. Feb 2024  
-  - Visiting Scholar–VLA data calibration
-
-- `College of Physical Science and Engineering Technology, Guangxi University`, Guangxi, China. Jul. 2024  
-  - Visiting Scholar–Combining VLA and GBT data
-
-
-<span class='anchor' id='-works'></span>
-
-# 💼 Community Work &amp; Outreach
-
-- LOC member &amp; Teaching Assistant, Astrochemistry Summer school, Xiamen, Jul. 2025
-- Teaching Assistant, University Physics (Undergraduate Course), Spring Semester. 2023
