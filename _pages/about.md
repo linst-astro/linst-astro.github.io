@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 <div align="center">
-<img src="images/carina-nebula-james-webb-telescope-0e6f4b6-e1657640050807.jpeg.webp" width="100%">
+<img src="images/carina-nebula-james-webb-telescope-0e6f4b6-e1657640050807.jpeg.webp" width="96%">
 </div>
 
 
