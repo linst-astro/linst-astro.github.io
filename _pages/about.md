@@ -17,6 +17,10 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
+<p align="center">
+<img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="900">
+</p>
+
 # 💡 Research Interests
 
 - High-mass star formation in the earliest stage  
