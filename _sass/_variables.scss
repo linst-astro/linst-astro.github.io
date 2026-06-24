@@ -55,21 +55,22 @@
    $darker-gray                : mix(#000, $gray, 60%);
    $light-gray                 : mix(#fff, $gray, 50%);
    $lighter-gray               : mix(#fff, $gray, 90%);
-   
-   $body-color                 : #fff;
-   $background-color           : #fff;
-   $code-background-color      : #EDEDEB;
-   $code-text-color           : #E65555;
+
+   /* Astronomy Theme Colors */
+   $body-color                 : #e2e8f0;
+   $background-color           : #0b0d17;
+   $card-background            : rgba(21, 25, 43, 0.7);
+   $code-background-color      : #1a1d2e;
+   $code-text-color           : #a78bfa;
    $code-background-color-dark : $light-gray;
-   $text-color                 : $dark-gray;
-   $border-color               : $lighter-gray;
-   
-   $primary-color              : #7a8288;
-   $success-color              : #62c462;
-   $warning-color              : #f89406;
-   $danger-color               : #ee5f5b;
-   $info-color                 : #224b8d;
-   // $info-color                 : #52adc8;
+   $text-color                 : #e2e8f0;
+   $border-color               : rgba(99, 102, 241, 0.2);
+
+   $primary-color              : #6366f1;
+   $success-color              : #34d399;
+   $warning-color              : #fbbf24;
+   $danger-color               : #f87171;
+   $info-color                 : #818cf8;
    
    /* brands */
    $behance-color              : #1769FF;
@@ -93,13 +94,13 @@
    $youtube-color              : #bb0000;
    $xing-color                 : #006567;
    
-   
+
    /* links */
-   $link-color                 : $info-color;
-   $link-color-hover           : mix(#000, $link-color, 25%);
-   $link-color-visited         : mix(#fff, $link-color, 25%);
-   $masthead-link-color        : $primary-color;
-   $masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+   $link-color                 : #a78bfa;
+   $link-color-hover           : #c4b5fd;
+   $link-color-visited         : #8b5cf6;
+   $masthead-link-color        : #e2e8f0;
+   $masthead-link-color-hover  : #c4b5fd;
    
    
    /*
@@ -151,9 +152,17 @@
       Other
       ========================================================================== */
    
-   $border-radius              : 4px;
-   $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+   $border-radius              : 8px;
+   $box-shadow                 : 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.15);
+   $glow-shadow                : 0 0 20px rgba(99, 102, 241, 0.3);
+   $card-hover-shadow          : 0 10px 25px -5px rgba(99, 102, 241, 0.4);
    $navicon-width              : 28px;
    $navicon-height             : 4px;
-   $global-transition          : all 0.2s ease-in-out;
-   
+   $global-transition          : all 0.3s ease-in-out;
+
+   /* Astronomy Theme Gradients */
+   $nebula-gradient            : linear-gradient(135deg, #0b0d17 0%, #1a1d3e 50%, #0f172a 100%);
+   $star-glow                  : radial-gradient(circle, rgba(251, 191, 36, 0.8) 0%, transparent 70%);
+   $card-gradient              : linear-gradient(180deg, rgba(21, 25, 43, 0.8) 0%, rgba(11, 13, 23, 0.9) 100%);
+   $aurora-gradient            : linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%);
+

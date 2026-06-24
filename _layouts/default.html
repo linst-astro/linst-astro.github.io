@@ -14,9 +14,16 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
+    <!-- Shooting Stars Animation Container -->
+    <div class="shooting-stars">
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+    </div>
+
     <div id="main" role="main">
       {% include sidebar.html %}
-    
+
       <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
         <div class="page__inner-wrap">
@@ -35,5 +42,13 @@ layout: compress
   copyright © 2026 All rights reserved.
 </div>
 </div>
+
+<!-- Scroll Indicator -->
+<div class="scroll-indicator">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+  </svg>
+</div>
+
   </body>
 </html>

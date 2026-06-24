@@ -1,17 +1,185 @@
-/* 全局深色样式 */
-body {
-  background-color: #121212 !important;
-  color: #e0e0e0 !important;
+/* ========================================================================
+   Astronomy Theme - Dark Mode Enhancement
+   ======================================================================== */
+
+/* Global Styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6366f1 #0b0d17;
 }
-a {
-  color: #64b5f6 !important;
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
-/* 修复图片反色 */
-img {
-  filter: invert(0) !important;
+
+*::-webkit-scrollbar-track {
+  background: #0b0d17;
 }
-/* 导航/头部深色 */
-header, .site-header, .nav {
-  background-color: #1e1e1e !important;
-  color: #fff !important;
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6366f1, #8b5cf6);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #8b5cf6, #a78bfa);
+}
+
+/* Selection */
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #fff;
+}
+
+/* Focus states */
+:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent text selection on decorative elements */
+.shooting-stars,
+.scroll-indicator {
+  user-select: none;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  background: rgba(26, 29, 46, 0.8);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: #e2e8f0;
+  border-radius: 4px;
+  padding: 0.5em;
+  transition: all 0.3s ease;
+
+  &:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+    outline: none;
+  }
+}
+
+/* Buttons */
+button,
+.btn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+/* Code blocks */
+code,
+pre {
+  background: rgba(26, 29, 46, 0.9) !important;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 4px;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+
+  th,
+  td {
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    padding: 0.75em;
+    text-align: left;
+  }
+
+  th {
+    background: rgba(99, 102, 241, 0.2);
+    color: #fbbf24;
+    font-weight: 600;
+  }
+
+  tr:hover {
+    background: rgba(99, 102, 241, 0.1);
+  }
+}
+
+/* Blockquote */
+blockquote {
+  border-left: 4px solid #6366f1;
+  background: rgba(99, 102, 241, 0.1);
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0 4px 4px 0;
+  color: #c4b5fd;
+}
+
+/* Animated elements */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(99, 102, 241, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.8);
+  }
+}
+
+/* Utility classes for special effects */
+.text-glow {
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
+.border-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Print styles */
+@media print {
+  .shooting-stars,
+  .scroll-indicator {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}
+
+/* Accessibility - Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

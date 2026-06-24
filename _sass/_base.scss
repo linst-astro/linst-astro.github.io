@@ -14,11 +14,173 @@
     color: $text-color;
     font-family: $global-font-family;
     line-height: 1.5;
-  
+    background: $nebula-gradient;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(2px 2px at 20px 30px, #fbbf24, transparent),
+        radial-gradient(2px 2px at 40px 70px, #fbbf24, transparent),
+        radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+        radial-gradient(2px 2px at 130px 80px, #fbbf24, transparent),
+        radial-gradient(1px 1px at 160px 120px, #fff, transparent),
+        radial-gradient(2px 2px at 200px 50px, #fbbf24, transparent),
+        radial-gradient(1px 1px at 250px 160px, #fff, transparent),
+        radial-gradient(2px 2px at 300px 90px, #fbbf24, transparent),
+        radial-gradient(1px 1px at 350px 130px, #fff, transparent),
+        radial-gradient(2px 2px at 400px 60px, #fbbf24, transparent),
+        radial-gradient(1px 1px at 450px 180px, #fff, transparent),
+        radial-gradient(2px 2px at 500px 100px, #fbbf24, transparent),
+        radial-gradient(1px 1px at 550px 40px, #fff, transparent),
+        radial-gradient(2px 2px at 600px 140px, #fbbf24, transparent),
+        radial-gradient(1px 1px at 650px 200px, #fff, transparent),
+        radial-gradient(2px 2px at 700px 70px, #fbbf24, transparent),
+        radial-gradient(1px 1px at 750px 170px, #fff, transparent),
+        radial-gradient(2px 2px at 800px 110px, #fbbf24, transparent),
+        radial-gradient(1px 1px at 850px 30px, #fff, transparent),
+        radial-gradient(2px 2px at 900px 150px, #fbbf24, transparent),
+        radial-gradient(1px 1px at 950px 190px, #fff, transparent),
+        radial-gradient(2px 2px at 1000px 80px, #fbbf24, transparent),
+        radial-gradient(1px 1px at 1050px 130px, #fff, transparent),
+        radial-gradient(2px 2px at 1100px 50px, #fbbf24, transparent),
+        radial-gradient(1px 1px at 1150px 170px, #fff, transparent),
+        radial-gradient(2px 2px at 1200px 90px, #fbbf24, transparent);
+      background-size: 1200px 250px;
+      animation: starsMove 100s linear infinite;
+      opacity: 0.6;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(1.5px 1.5px at 25px 35px, #a78bfa, transparent),
+        radial-gradient(1.5px 1.5px at 55px 85px, #a78bfa, transparent),
+        radial-gradient(1px 1px at 95px 45px, #818cf8, transparent),
+        radial-gradient(1.5px 1.5px at 145px 95px, #a78bfa, transparent),
+        radial-gradient(1px 1px at 175px 135px, #818cf8, transparent),
+        radial-gradient(1.5px 1.5px at 225px 65px, #a78bfa, transparent),
+        radial-gradient(1px 1px at 275px 175px, #818cf8, transparent),
+        radial-gradient(1.5px 1.5px at 325px 105px, #a78bfa, transparent),
+        radial-gradient(1px 1px at 375px 145px, #818cf8, transparent),
+        radial-gradient(1.5px 1.5px at 425px 75px, #a78bfa, transparent),
+        radial-gradient(1px 1px at 475px 195px, #818cf8, transparent),
+        radial-gradient(1.5px 1.5px at 525px 115px, #a78bfa, transparent),
+        radial-gradient(1px 1px at 575px 55px, #818cf8, transparent),
+        radial-gradient(1.5px 1.5px at 625px 155px, #a78bfa, transparent),
+        radial-gradient(1px 1px at 675px 215px, #818cf8, transparent),
+        radial-gradient(1.5px 1.5px at 725px 85px, #a78bfa, transparent),
+        radial-gradient(1px 1px at 775px 185px, #818cf8, transparent),
+        radial-gradient(1.5px 1.5px at 825px 125px, #a78bfa, transparent),
+        radial-gradient(1px 1px at 875px 45px, #818cf8, transparent),
+        radial-gradient(1.5px 1.5px at 925px 165px, #a78bfa, transparent),
+        radial-gradient(1px 1px at 975px 205px, #818cf8, transparent),
+        radial-gradient(1.5px 1.5px at 1025px 95px, #a78bfa, transparent),
+        radial-gradient(1px 1px at 1075px 145px, #818cf8, transparent),
+        radial-gradient(1.5px 1.5px at 1125px 65px, #a78bfa, transparent),
+        radial-gradient(1px 1px at 1175px 185px, #818cf8, transparent),
+        radial-gradient(1.5px 1.5px at 1225px 105px, #a78bfa, transparent);
+      background-size: 1300px 260px;
+      animation: starsMove 150s linear infinite reverse;
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: -1;
+    }
+
     &.overflow--hidden {
       /* when primary navigation is visible, the content in the background won't scroll */
       overflow: hidden;
     }
+  }
+
+  @keyframes starsMove {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-260px);
+    }
+  }
+
+  /* Shooting Stars */
+  .shooting-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .shooting-star {
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, #fff, transparent);
+    border-radius: 50%;
+    opacity: 0;
+    filter: drop-shadow(0 0 6px #fbbf24);
+
+    &:nth-child(1) {
+      top: 10%;
+      left: 80%;
+      animation: shoot 8s ease-in-out infinite;
+      animation-delay: 2s;
+    }
+
+    &:nth-child(2) {
+      top: 30%;
+      left: 60%;
+      animation: shoot 12s ease-in-out infinite;
+      animation-delay: 5s;
+      width: 150px;
+    }
+
+    &:nth-child(3) {
+      top: 50%;
+      left: 90%;
+      animation: shoot 10s ease-in-out infinite;
+      animation-delay: 8s;
+      width: 80px;
+    }
+  }
+
+  @keyframes shoot {
+    0% {
+      transform: translateX(0) translateY(0) rotate(-45deg);
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    15% {
+      transform: translateX(-500px) translateY(500px) rotate(-45deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-500px) translateY(500px) rotate(-45deg);
+      opacity: 0;
+    }
+  }
+
+  .scroll-indicator {
+    display: none;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -26,6 +188,38 @@
     line-height: 1.2;
     font-family: $header-font-family;
     font-weight: bold;
+    color: $text-color;
+    position: relative;
+
+    &::before {
+      content: '✦';
+      margin-right: 10px;
+      color: $warning-color;
+      animation: twinkle 2s ease-in-out infinite;
+    }
+  }
+
+  h1::before {
+    font-size: 0.8em;
+  }
+
+  h2::before {
+    font-size: 0.7em;
+  }
+
+  h3::before {
+    font-size: 0.6em;
+  }
+
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(0.8);
+    }
   }
   
   h1 {
@@ -116,16 +310,37 @@
   }
   
   /* links */
-  
+
   a {
-    
+    color: $link-color;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: $aurora-gradient;
+      transition: width 0.3s ease;
+    }
+
     &:focus {
       @extend %tab-focus;
     }
-  
+
     &:hover,
     &:active {
       outline: 0;
+      color: $link-color-hover;
+      text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+
+      &::after {
+        width: 100%;
+      }
     }
   }
   
