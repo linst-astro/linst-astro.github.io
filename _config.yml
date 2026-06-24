@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Shuting Lin"
-description              : "Hi~ this is my academic homepage"
+title                    : "Shutting Lin"
+description              : ""
 repository               : "linst-astro/linst-astro.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -24,7 +24,7 @@ author:
   name             : "Shuting Lin"
   avatar           : "images/white_cat_ustc.jpg"
   bio              : "Department of Astronomy, Xiamen University"
-  location         : "Xiamen City, Fujian Province, China"
+  location         : "Xiamen, China"
   employer         : #"Hefei General Machinery Research Institute"
   pubmed           : 
   # googlescholar    : "https://scholar.google.com/citations?user=WMkMTb4AAAAJ"
