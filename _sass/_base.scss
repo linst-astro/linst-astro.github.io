@@ -16,7 +16,7 @@
     line-height: 1.5;
     background: $nebula-gradient;
     background-attachment: fixed;
-    min-height: 100vh;
+    height: auto;
     position: relative;
 
     &::before {
