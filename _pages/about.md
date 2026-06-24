@@ -15,13 +15,6 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-<span class='anchor' id='about-me'></span>
-
-<div align="center">
-<img src="images/carina-nebula-james-webb-telescope-0e6f4b6-e1657640050807.jpeg.webp" width="96%">
-</div>
-
-
 # 💡 Research Interests
 
 - High-mass star formation in the earliest stage  
