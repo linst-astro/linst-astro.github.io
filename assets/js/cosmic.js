@@ -169,9 +169,44 @@
   }
 
   /* ==========================================================================
-     boot — reveal first so a failure in another module never hides content
+     4. Wrap sections — group the content under each anchor into
+        <section class="sec"> so the frameless grouping + running numbers
+        apply. Progressive: if it fails the raw content stays as direct
+        children and still reveals fine.
+     ========================================================================== */
+  function initWrap() {
+    var content = document.querySelector('.page__content');
+    if (!content) return;
+    var nodes = Array.prototype.slice.call(content.childNodes);
+    var groups = [];
+    var cur = null;
+    nodes.forEach(function (n) {
+      if (n.nodeType === 3 && !n.textContent.trim()) return; // drop whitespace-only text
+      if (n.nodeType === 1 && n.classList && n.classList.contains('anchor')) {
+        cur = [];
+        groups.push(cur);
+        cur.push(n);
+      } else {
+        if (!cur) { cur = []; groups.push(cur); } // leading group before any anchor
+        cur.push(n);
+      }
+    });
+    groups.forEach(function (g) {
+      if (!g.length) return;
+      var sec = document.createElement('section');
+      sec.className = 'sec';
+      content.insertBefore(sec, g[0]);
+      g.forEach(function (n) { sec.appendChild(n); });
+    });
+  }
+
+  /* ==========================================================================
+     boot — wrap, then reveal. reveal-on is added here (not in <head>) so that
+     if this script ever fails to load, content is never left hidden.
      ========================================================================== */
   ready(function () {
+    document.documentElement.classList.add('reveal-on');
+    try { initWrap(); } catch (e) {}
     try { initReveal(); } catch (e) {}
     try { initStarfield(); } catch (e) {}
     try { initRotator(); } catch (e) {}

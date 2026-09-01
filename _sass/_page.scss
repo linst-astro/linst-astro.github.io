@@ -91,8 +91,9 @@
     top: -1em;
   }
 
-  /* Calm scroll-reveal — scoped to .js so no-JS keeps content fully visible */
-  .js & {
+  /* Calm scroll-reveal — scoped to .reveal-on (added by JS) so a script
+     failure never leaves content hidden */
+  .reveal-on & {
     > *:not(.anchor):not(.is-visible) {
       opacity: 0;
       transform: translateY(14px);
@@ -114,7 +115,8 @@
     padding-inline-start: 1.5em;
 
     li {
-      margin-bottom: 0.8em;
+      margin-bottom: 1em;
+      line-height: 1.7;
       position: relative;
 
       &::marker {
