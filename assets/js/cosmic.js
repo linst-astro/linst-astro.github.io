@@ -1,7 +1,7 @@
 /*!
  * cosmic.js — minimal premium effects for the astronomy homepage
  *
- *   1. subtle canvas starfield (slow drift + faint twinkle + gentle mouse parallax)
+ *   1. canvas starfield (slow drift + faint twinkle + gentle mouse parallax + occasional meteors)
  *   2. refined typewriter for the hero
  *   3. calm scroll-reveal via IntersectionObserver
  *
@@ -30,6 +30,7 @@
     var COUNT = 120;            // restrained — premium, not busy
     var mx = 0, my = 0, tx = 0, ty = 0;
     var raf = null, running = false;
+    var meteors = [], frameNo = 0, nextMeteor = 240 + Math.floor(Math.random() * 360);
 
     function build() {
       stars = [];
@@ -70,6 +71,20 @@
       }
     }
 
+    function spawnMeteor() {
+      var dir = Math.random() < 0.5 ? -1 : 1;
+      var sp = (5 + Math.random() * 3) * dpr;
+      meteors.push({
+        x: Math.random() * w,
+        y: Math.random() * h * 0.45,
+        vx: dir * sp,
+        vy: (2 + Math.random() * 1.6) * dpr,
+        len: (90 + Math.random() * 70) * dpr,
+        life: 0,
+        max: 60 + Math.floor(Math.random() * 30)
+      });
+    }
+
     function frame() {
       ctx.clearRect(0, 0, w, h);
       tx += (mx - tx) * 0.035;
@@ -89,6 +104,41 @@
           : 'rgba(232,230,225,' + alpha + ')';
         ctx.fill();
       }
+
+      // occasional meteors
+      frameNo++;
+      if (frameNo >= nextMeteor) {
+        spawnMeteor();
+        nextMeteor = frameNo + 240 + Math.floor(Math.random() * 360);
+      }
+      for (var j = meteors.length - 1; j >= 0; j--) {
+        var m = meteors[j];
+        m.x += m.vx; m.y += m.vy; m.life++;
+        var spd = Math.sqrt(m.vx * m.vx + m.vy * m.vy);
+        var tX = m.x - (m.vx / spd) * m.len;
+        var tY = m.y - (m.vy / spd) * m.len;
+        var op = Math.sin(Math.PI * (m.life / m.max));
+        if (op < 0) op = 0;
+        var g = ctx.createLinearGradient(m.x, m.y, tX, tY);
+        g.addColorStop(0, 'rgba(255,255,255,' + (op * 0.95) + ')');
+        g.addColorStop(0.35, 'rgba(232,230,225,' + (op * 0.45) + ')');
+        g.addColorStop(1, 'rgba(201,169,110,0)');
+        ctx.strokeStyle = g;
+        ctx.lineWidth = 1.6 * dpr;
+        ctx.lineCap = 'round';
+        ctx.beginPath();
+        ctx.moveTo(m.x, m.y);
+        ctx.lineTo(tX, tY);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(m.x, m.y, 1.6 * dpr, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255,255,255,' + op + ')';
+        ctx.fill();
+        if (m.life >= m.max || m.x < -m.len || m.x > w + m.len || m.y > h + m.len) {
+          meteors.splice(j, 1);
+        }
+      }
+
       raf = requestAnimationFrame(frame);
     }
 
