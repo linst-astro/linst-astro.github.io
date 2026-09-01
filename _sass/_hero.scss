@@ -49,17 +49,12 @@
   letter-spacing: 0.06em;
   color: mix(#000, $text-color, 30%);
   min-height: 1.5em;
+  overflow: hidden;
 }
 
-.hero__caret {
+.hero__role-text {
   display: inline-block;
-  margin-left: 1px;
-  color: $primary-color;
-  animation: hero-blink 1.05s steps(1) infinite;
-}
-
-@keyframes hero-blink {
-  50% { opacity: 0; }
+  white-space: nowrap;
 }
 
 .hero__scroll {
@@ -112,7 +107,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero__caret,
   .hero__scroll-line::after { animation: none; }
 }
 

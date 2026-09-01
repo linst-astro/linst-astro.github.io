@@ -110,31 +110,41 @@
   }
 
   /* ==========================================================================
-     2. Refined typewriter
+     2. Role rotator — clean vertical slide between roles (no horizontal jitter)
      ========================================================================== */
-  function initTypewriter() {
-    var el = document.querySelector('[data-typewriter]');
+  function initRotator() {
+    var el = document.querySelector('[data-rotator]');
     if (!el) return;
     var lines = [];
     try { lines = JSON.parse(el.getAttribute('data-lines') || '[]'); } catch (e) {}
     if (!lines.length) return;
-    if (reduceMotion) { el.textContent = lines[0]; return; }
+    el.textContent = lines[0];
+    if (reduceMotion || lines.length === 1) return;
 
-    var li = 0, ci = 0, deleting = false;
-    function tick() {
-      var cur = lines[li];
-      if (!deleting) {
-        ci++;
-        el.textContent = cur.slice(0, ci);
-        if (ci === cur.length) { deleting = true; return setTimeout(tick, 1700); }
-        return setTimeout(tick, 55 + Math.random() * 50);
-      }
-      ci--;
-      el.textContent = cur.slice(0, ci);
-      if (ci === 0) { deleting = false; li = (li + 1) % lines.length; return setTimeout(tick, 360); }
-      setTimeout(tick, 28);
+    var idx = 0;
+    var DUR = 450;
+    var T = 'transform ' + DUR + 'ms ease, opacity ' + DUR + 'ms ease';
+
+    function step() {
+      // slide current up & out
+      el.style.transition = T;
+      el.style.transform = 'translateY(-100%)';
+      el.style.opacity = '0';
+      setTimeout(function () {
+        idx = (idx + 1) % lines.length;
+        el.textContent = lines[idx];
+        // reposition below without animating
+        el.style.transition = 'none';
+        el.style.transform = 'translateY(100%)';
+        el.style.opacity = '0';
+        void el.offsetWidth;            // force reflow
+        el.style.transition = T;
+        el.style.transform = 'translateY(0)';
+        el.style.opacity = '1';
+      }, DUR);
     }
-    setTimeout(tick, 650);
+
+    setInterval(step, 2800);
   }
 
   /* ==========================================================================
@@ -164,6 +174,6 @@
   ready(function () {
     try { initReveal(); } catch (e) {}
     try { initStarfield(); } catch (e) {}
-    try { initTypewriter(); } catch (e) {}
+    try { initRotator(); } catch (e) {}
   });
 })();
