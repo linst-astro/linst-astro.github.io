@@ -56,21 +56,21 @@
    $light-gray                 : mix(#fff, $gray, 50%);
    $lighter-gray               : mix(#fff, $gray, 90%);
 
-   /* Astronomy Theme Colors */
-   $body-color                 : #e2e8f0;
-   $background-color           : #0b0d17;
-   $card-background            : rgba(21, 25, 43, 0.7);
-   $code-background-color      : #1a1d2e;
-   $code-text-color           : #a78bfa;
+   /* Astronomy Theme Colors — minimal premium (near-black + champagne gold) */
+   $body-color                 : #e7e5e0;   // warm off-white
+   $background-color           : #07070b;   // near-black
+   $card-background            : rgba(255, 255, 255, 0.02);
+   $code-background-color      : rgba(255, 255, 255, 0.04);
+   $code-text-color            : #cbb98a;
    $code-background-color-dark : $light-gray;
-   $text-color                 : #e2e8f0;
-   $border-color               : rgba(99, 102, 241, 0.2);
+   $text-color                 : #e7e5e0;
+   $border-color               : rgba(255, 255, 255, 0.07);
 
-   $primary-color              : #6366f1;
+   $primary-color              : #c9a96e;   // champagne gold — the single accent
    $success-color              : #34d399;
-   $warning-color              : #fbbf24;
+   $warning-color              : #c9a96e;   // gold markers
    $danger-color               : #f87171;
-   $info-color                 : #818cf8;
+   $info-color                 : #c9a96e;
    
    /* brands */
    $behance-color              : #1769FF;
@@ -96,11 +96,11 @@
    
 
    /* links */
-   $link-color                 : #a78bfa;
-   $link-color-hover           : #c4b5fd;
-   $link-color-visited         : #8b5cf6;
-   $masthead-link-color        : #e2e8f0;
-   $masthead-link-color-hover  : #c4b5fd;
+   $link-color                 : #c9a96e;
+   $link-color-hover           : #e0c79a;
+   $link-color-visited         : #b8975f;
+   $masthead-link-color        : #e7e5e0;
+   $masthead-link-color-hover  : #c9a96e;
    
    
    /*
@@ -154,15 +154,15 @@
    
    $border-radius              : 8px;
    $box-shadow                 : 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.15);
-   $glow-shadow                : 0 0 20px rgba(99, 102, 241, 0.3);
-   $card-hover-shadow          : 0 10px 25px -5px rgba(99, 102, 241, 0.4);
+   $glow-shadow                : 0 0 22px rgba(201, 169, 110, 0.10);
+   $card-hover-shadow          : 0 12px 32px -10px rgba(0, 0, 0, 0.55);
    $navicon-width              : 28px;
    $navicon-height             : 4px;
    $global-transition          : all 0.3s ease-in-out;
 
-   /* Astronomy Theme Gradients */
-   $nebula-gradient            : linear-gradient(135deg, #0b0d17 0%, #1a1d3e 50%, #0f172a 100%);
-   $star-glow                  : radial-gradient(circle, rgba(251, 191, 36, 0.8) 0%, transparent 70%);
-   $card-gradient              : linear-gradient(180deg, rgba(21, 25, 43, 0.8) 0%, rgba(11, 13, 23, 0.9) 100%);
-   $aurora-gradient            : linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%);
+   /* Astronomy Theme Gradients — muted, monochrome */
+   $nebula-gradient            : linear-gradient(160deg, #07070b 0%, #0c0b11 48%, #07070b 100%);
+   $star-glow                  : radial-gradient(circle, rgba(201, 169, 110, 0.7) 0%, transparent 70%);
+   $card-gradient              : linear-gradient(180deg, rgba(255, 255, 255, 0.025) 0%, rgba(255, 255, 255, 0) 100%);
+   $aurora-gradient            : linear-gradient(90deg, transparent 0%, rgba(201, 169, 110, 0.9) 50%, transparent 100%);
 

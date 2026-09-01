@@ -49,65 +49,65 @@
 }
 
 .page__content {
-  #about-me{
-    margin-top: -10em;
-      &:before {
-        content: '';
-        display: block;
-        position: relative;
-        width: 0;
-        height: 10em;
-        margin-top: -10em;
-    }
-  }
+  /* #about-me now lives in the hero — no nav offset needed */
+
   h1 {
-    margin-top: 1em;
-    padding-bottom: 0.5em;
-    border-bottom: none;
-    background: $aurora-gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    margin-top: 1.6em;
+    padding-bottom: 0.35em;
+    color: $text-color;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.22);
   }
 
   h2 {
-    background: linear-gradient(90deg, #fbbf24, #fcd34d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    padding-left: 2.2em;
+    color: $primary-color;
+    letter-spacing: 0.04em;
+    padding-left: 0;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 0.6em;
+      height: 1px;
+      margin-right: 0.7em;
+      margin-bottom: 0.18em;
+      background: $primary-color;
+      vertical-align: middle;
+    }
   }
 
   h3 {
-    color: $link-color;
+    color: mix(#fff, $primary-color, 40%);
   }
 
   p, li, dl {
     font-size: 1em;
   }
 
-  /* Content Sections as Cards */
+  /* hidden scroll anchors */
   .anchor {
     display: block;
     visibility: hidden;
+    position: relative;
+    top: -1em;
+  }
 
-    + div {
-      background: $card-background;
-      backdrop-filter: blur(10px);
-      border: 1px solid $border-color;
-      border-radius: $border-radius;
-      padding: 1.5em;
-      margin: 1.5em 0;
-      box-shadow: $box-shadow;
-      transition: all $global-transition;
-      animation: fadeInUp 0.6s ease-out;
-
-      &:hover {
-        box-shadow: $card-hover-shadow;
-        transform: translateY(-5px);
-        border-color: rgba(99, 102, 241, 0.4);
-      }
+  /* Calm scroll-reveal — scoped to .js so no-JS keeps content fully visible */
+  .js & {
+    > *:not(.anchor):not(.is-visible) {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
     }
+
+    > .is-visible {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* real cards (paper-box) get a hairline, not a heavy box */
+  .paper-box {
+    border-bottom: 1px solid $border-color;
   }
 
   ul {
@@ -134,19 +134,8 @@
   }
 
   em {
-    color: $success-color;
-    font-style: normal;
-  }
-
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    color: mix(#fff, $primary-color, 30%);
+    font-style: italic;
   }
 
   /* paragraph indents */
@@ -256,7 +245,7 @@
   -ms-interpolation-mode: bicubic;
   border-radius: $border-radius;
   box-shadow: $glow-shadow;
-  border: 1px solid rgba(99, 102, 241, 0.3);
+  border: 1px solid rgba(201, 169, 110, 0.3);
   transition: all $global-transition;
 
   &:hover {
@@ -511,7 +500,7 @@ hr {
   margin: auto;
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(201, 169, 110, 0.5), transparent);
 }
 
 .footer_copyright{

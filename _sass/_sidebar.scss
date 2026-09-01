@@ -109,7 +109,7 @@
 
     @include breakpoint($large) {
       padding: 4px;
-      border: 2px solid rgba(99, 102, 241, 0.5);
+      border: 2px solid rgba(201, 169, 110, 0.35);
       box-shadow: $glow-shadow;
       transition: all $global-transition;
     }
@@ -273,7 +273,7 @@
 
     &:hover {
       color: $link-color-hover;
-      text-shadow: 0 0 8px rgba(167, 139, 250, 0.6);
+      text-shadow: 0 0 8px rgba(201, 169, 110, 0.22);
       padding-left: 5px;
     }
 
@@ -301,7 +301,7 @@
 
     &:hover {
       color: $link-color-hover;
-      text-shadow: 0 0 12px rgba(167, 139, 250, 0.8);
+      text-shadow: 0 0 12px rgba(201, 169, 110, 0.28);
       transform: scale(1.2);
     }
   }

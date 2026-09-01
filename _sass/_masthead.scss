@@ -5,9 +5,9 @@
 .masthead {
   position: sticky;
   top: 0;
-  background: rgba(11, 13, 23, 0.95);
+  background: rgba(7, 7, 11, 0.92);
   backdrop-filter: blur(15px);
-  border-bottom: 1px solid rgba(99, 102, 241, 0.3);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.16);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -36,7 +36,6 @@
 
       &:hover {
         color: $link-color-hover;
-        text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
       }
     }
   }

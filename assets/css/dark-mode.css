@@ -1,11 +1,12 @@
 /* ========================================================================
-   Astronomy Theme - Dark Mode Enhancement
+   Astronomy Theme — Dark Mode Enhancement
+   (minimal premium: near-black + champagne gold)
    ======================================================================== */
 
 /* Global Styles */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #6366f1 #0b0d17;
+  scrollbar-color: #c9a96e #07070b;
 }
 
 *::-webkit-scrollbar {
@@ -14,32 +15,32 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #0b0d17;
+  background: #07070b;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #6366f1, #8b5cf6);
+  background: linear-gradient(180deg, #c9a96e, #b8975f);
   border-radius: 4px;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #8b5cf6, #a78bfa);
+  background: linear-gradient(180deg, #d4b87a, #c9a96e);
 }
 
 /* Selection */
 ::selection {
-  background: rgba(99, 102, 241, 0.3);
+  background: rgba(201, 169, 110, 0.28);
   color: #fff;
 }
 
 ::-moz-selection {
-  background: rgba(99, 102, 241, 0.3);
+  background: rgba(201, 169, 110, 0.28);
   color: #fff;
 }
 
 /* Focus states */
 :focus-visible {
-  outline: 2px solid #6366f1;
+  outline: 2px solid #c9a96e;
   outline-offset: 2px;
 }
 
@@ -49,7 +50,6 @@ html {
 }
 
 /* Prevent text selection on decorative elements */
-.shooting-stars,
 .scroll-indicator {
   user-select: none;
 }
@@ -59,16 +59,16 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea {
-  background: rgba(26, 29, 46, 0.8);
-  border: 1px solid rgba(99, 102, 241, 0.3);
-  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(201, 169, 110, 0.25);
+  color: #e7e5e0;
   border-radius: 4px;
   padding: 0.5em;
   transition: all 0.3s ease;
 
   &:focus {
-    border-color: #6366f1;
-    box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+    border-color: #c9a96e;
+    box-shadow: 0 0 10px rgba(201, 169, 110, 0.2);
     outline: none;
   }
 }
@@ -76,18 +76,18 @@ textarea {
 /* Buttons */
 button,
 .btn {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
-  color: #fff;
+  background: linear-gradient(135deg, #c9a96e, #b8975f);
+  color: #07070b;
   border: none;
   border-radius: 4px;
   padding: 0.5em 1.5em;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-weight: 500;
+  font-weight: 600;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 4px 15px rgba(201, 169, 110, 0.3);
   }
 
   &:active {
@@ -98,8 +98,8 @@ button,
 /* Code blocks */
 code,
 pre {
-  background: rgba(26, 29, 46, 0.9) !important;
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(201, 169, 110, 0.12);
   border-radius: 4px;
 }
 
@@ -116,45 +116,45 @@ table {
 
   th,
   td {
-    border: 1px solid rgba(99, 102, 241, 0.2);
+    border: 1px solid rgba(201, 169, 110, 0.15);
     padding: 0.75em;
     text-align: left;
   }
 
   th {
-    background: rgba(99, 102, 241, 0.2);
-    color: #fbbf24;
+    background: rgba(201, 169, 110, 0.12);
+    color: #c9a96e;
     font-weight: 600;
   }
 
   tr:hover {
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(201, 169, 110, 0.06);
   }
 }
 
 /* Blockquote */
 blockquote {
-  border-left: 4px solid #6366f1;
-  background: rgba(99, 102, 241, 0.1);
+  border-left: 4px solid #c9a96e;
+  background: rgba(201, 169, 110, 0.06);
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0 4px 4px 0;
-  color: #c4b5fd;
+  color: #d8c9a8;
 }
 
 /* Animated elements */
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 5px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 5px rgba(201, 169, 110, 0.3);
   }
   50% {
-    box-shadow: 0 0 20px rgba(99, 102, 241, 0.8);
+    box-shadow: 0 0 20px rgba(201, 169, 110, 0.5);
   }
 }
 
 /* Utility classes for special effects */
 .text-glow {
-  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+  text-shadow: 0 0 10px rgba(201, 169, 110, 0.3);
 }
 
 .border-glow {
@@ -163,8 +163,8 @@ blockquote {
 
 /* Print styles */
 @media print {
-  .shooting-stars,
-  .scroll-indicator {
+  .scroll-indicator,
+  #starfield {
     display: none !important;
   }
   body {
