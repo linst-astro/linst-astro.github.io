@@ -17,16 +17,16 @@ redirect_from:
 <span class='anchor' id='-educations'></span>
 
 # 🎓 Educations
-- Department of Astronomy, Xiamen University, China — PhD in Astrophysics, Sep 2022 – Jun 2026 (expected)
+- <span class="education-school">Department of Astronomy, Xiamen University</span>, China — PhD in Astrophysics, Sep 2022 – Jun 2026 (expected)
   - Supervisor @ XMU: Prof. Siyi Feng
   - Area of study: High-mass star formation at early stage
 
-- Purple Mountain Observatory, CAS, China — M.Sc. in Astrophysics, Sep 2019 – Jun 2022
+- <span class="education-school">Purple Mountain Observatory, CAS</span>, China — M.Sc. in Astrophysics, Sep 2019 – Jun 2022
   - Thesis: Dense molecular gas and its correlation with infrared characteristics in NGC 1068
   - Supervisor: Prof. Yu Gao
   - Area of study: Star formation in galaxies
 
-- Fuzhou University, China — B.Sc. in Physics, Sep 2015 – Jun 2019
+- <span class="education-school">Fuzhou University</span>, China — B.Sc. in Physics, Sep 2015 – Jun 2019
 
 
 <span class='anchor' id='-publications'></span>
