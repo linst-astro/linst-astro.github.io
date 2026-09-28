@@ -1,7 +1,3 @@
----
-layout: compress
----
-<link rel="stylesheet" href="/assets/css/dark-mode.css">
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -11,7 +7,6 @@ layout: compress
 
   <body>
 
-    {% include browser-upgrade.html %}
     {% include masthead.html %}
 
     <!-- Subtle canvas starfield (replaces the old hardcoded CSS layers) -->
@@ -37,7 +32,7 @@ layout: compress
 <div class="footer_site">
 <hr/>
 <div class="footer_copyright">
-  copyright &copy; 2026 All rights reserved.
+  copyright &copy; {{ "now" | date: "%Y" }} All rights reserved.
 </div>
 </div>
 

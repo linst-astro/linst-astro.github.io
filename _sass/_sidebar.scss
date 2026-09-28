@@ -309,3 +309,11 @@
     display: none;
   }
 }
+
+/* Keep profile icons in the same gold on desktop and mobile. */
+.author__urls,
+.author__urls_sm {
+  .fa, .fas, .fab, .ai {
+    color: $primary-color;
+  }
+}

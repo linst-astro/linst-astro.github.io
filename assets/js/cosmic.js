@@ -162,7 +162,7 @@
       entries.forEach(function (en) {
         if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); }
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0 });
     for (var i = 0; i < els.length; i++) {
       els[i].style.transitionDelay = ((i % 4) * 60) + 'ms';
       io.observe(els[i]);
@@ -171,8 +171,7 @@
 
   /* ==========================================================================
      4. Wrap sections — group the content under each anchor into
-        <section class="sec"> so the frameless grouping + running numbers
-        apply. Progressive: if it fails the raw content stays as direct
+        <section class="sec"> so the frameless section styling applies. Progressive: if it fails the raw content stays as direct
         children and still reveals fine.
      ========================================================================== */
   function initWrap() {
@@ -206,9 +205,13 @@
      if this script ever fails to load, content is never left hidden.
      ========================================================================== */
   ready(function () {
-    document.documentElement.classList.add('reveal-on');
     try { initWrap(); } catch (e) {}
-    try { initReveal(); } catch (e) {}
+    try {
+      initReveal();
+      document.documentElement.classList.add('reveal-on');
+    } catch (e) {
+      document.documentElement.classList.remove('reveal-on');
+    }
     try { initStarfield(); } catch (e) {}
     try { initRotator(); } catch (e) {}
   });

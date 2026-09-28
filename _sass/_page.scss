@@ -94,21 +94,19 @@
   /* Calm scroll-reveal — scoped to .reveal-on (added by JS) so a script
      failure never leaves content hidden */
   .reveal-on & {
+    > *:not(.anchor) {
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
     > *:not(.anchor):not(.is-visible) {
       opacity: 0;
       transform: translateY(14px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
     }
 
     > .is-visible {
       opacity: 1;
       transform: none;
     }
-  }
-
-  /* real cards (paper-box) get a hairline, not a heavy box */
-  .paper-box {
-    border-bottom: 1px solid $border-color;
   }
 
   ul {

@@ -102,13 +102,13 @@
   font-size: clamp(0.95rem, 2.4vw, 1.15rem);
   letter-spacing: 0.06em;
   color: mix(#000, $text-color, 30%);
-  min-height: 1.5em;
+  min-height: 3em;
   overflow: hidden;
 }
 
 .hero__role-text {
   display: inline-block;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .hero__scroll {
