@@ -5,7 +5,7 @@
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
 
   <div class="author__avatar">
-    <img src="{{ author.avatar | relative_url }}" class="author__avatar" alt="{{ author.name | escape }}">
+    <img src="{{ author.avatar | relative_url }}" alt="{{ author.name | escape }}">
   </div>
 
   <div class="author__content">
@@ -31,16 +31,5 @@
         <li><a aria-label="ORCID" href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
       {% endif %}
     </ul>
-      <div class="author__urls_sm">
-      {% if author.email %}
-        <a aria-label="Email" href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
-      {% endif %}
-      {% if author.github %}
-        <a aria-label="GitHub" href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
-      {% endif %}
-      {% if author.orcid %}
-        <a aria-label="ORCID" href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i></a>
-      {% endif %}
-    </div>
   </div>
 </div>

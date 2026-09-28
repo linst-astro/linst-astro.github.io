@@ -195,12 +195,6 @@
   color: mix(#000, $text-color, 25%);
 }
 
-.author__avatar {
-  border-radius: 50%;
-  border: 1px solid $border-color;
-  box-shadow: $glow-shadow;
-}
-
 @media print {
   .hero__meteors { display: none; }
 }

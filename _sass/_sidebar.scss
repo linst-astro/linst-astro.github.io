@@ -68,252 +68,94 @@
 /*
    Author profile and links
    ========================================================================== */
-.profile_box{
-  @include breakpoint($large) {
-    display: block;
-    background: $card-background;
-    backdrop-filter: blur(10px);
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
-    padding: 1.5em;
-    margin-top: 1em;
-    box-shadow: $box-shadow;
-  }
-  display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
+/* The sidebar owns the only card border. Its contents may always shrink. */
+.profile_box {
+  display: grid;
+  grid-template-columns: minmax(0, 75px) minmax(0, 1fr);
+  gap: 1em;
   align-items: center;
-  background: transparent;
-  border: none;
-  padding: 0;
+  min-width: 0;
+  padding: 1em;
+  overflow-wrap: anywhere;
+
+  > * { min-width: 0; max-width: 100%; }
+
+  @include breakpoint($large) {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .author__avatar {
-  display: table-cell;
-  vertical-align: top;
-  width: 75px;
-  // set width only, for non-square avatars
-  // height: 36px;
-
-  @include breakpoint($large) {
-    display: block;
-    width: auto;
-    height: auto;
-    text-align: center;
-  }
+  width: 100%;
+  max-width: 175px;
+  margin: 0 auto;
 
   img {
-    max-width: 175px;
-    min-width: 75px;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
     border-radius: 50%;
-
-    @include breakpoint($large) {
-      padding: 4px;
-      border: 2px solid rgba(201, 169, 110, 0.35);
-      box-shadow: $glow-shadow;
-      transition: all $global-transition;
-    }
-
-    &:hover {
-      box-shadow: $card-hover-shadow;
-      transform: scale(1.05);
-    }
+    border: 1px solid $border-color;
+    padding: 4px;
+    box-shadow: $glow-shadow;
   }
 }
 
 .author__content {
-  display: table-cell;
-  vertical-align: top;
-  padding-left: 10px;
-  min-width: 120px;
-  // padding-right: 25px;
-  line-height: 1;
-
-  @include breakpoint($large) {
-    display: block;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.author__name {
-  margin: 0;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+  min-width: 0;
+  line-height: 1.5;
 }
 
 .sidebar .author__name {
-  @include breakpoint($medium) {
-    font-size: $type-size-3;
-  }
+  margin: 0 0 0.5em;
   font-family: $serif;
   font-size: $type-size-4;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
 }
 
 .author__bio {
   margin: 0;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
+  overflow-wrap: anywhere;
 }
 
 .author__urls-wrapper {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
+  grid-column: 1 / -1;
+  min-width: 0;
   font-family: $serif;
-  z-index: 10;
-  position: relative;
-  margin-left: auto;
-  cursor: pointer;
-
-  li:last-child {
-    a {
-      margin-bottom: 0;
-    }
-  }
-
-  @include breakpoint($large) {
-    display: block;
-  }
-
-  button {
-    margin-bottom: 0;
-    width: 120px;
-    padding: 0.5em;
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
 }
 
 .author__urls {
-  display: none;
-  position: absolute;
-  right: 0;
-  margin-top: 15px;
-  padding: 10px;
-  list-style-type: none;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  background: $card-background;
-  backdrop-filter: blur(10px);
-  z-index: -1;
-  box-shadow: $box-shadow;
-  cursor: default;
-
-  @include breakpoint($large) {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-
-  &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -11px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: $border-color transparent;
-    z-index: 0;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
-
-  &:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: #fff transparent;
-    z-index: 1;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
+  display: block;
+  position: static;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
   li {
-    white-space: nowrap;
+    margin: 0 0 0.35em;
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
   a {
     display: block;
-    margin-bottom: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    max-width: 100%;
+    padding: 2px 0;
     color: $link-color;
-    font-size: $type-size-5;
     text-decoration: none;
-    transition: all $global-transition;
+    overflow-wrap: anywhere;
 
     &:hover {
       color: $link-color-hover;
       text-shadow: 0 0 8px rgba(201, 169, 110, 0.22);
-      padding-left: 5px;
-    }
-
-    i, .fa, .fas, .fab, .ai {
-      margin-right: 8px;
-      transition: all $global-transition;
-
-      &:hover {
-        transform: scale(1.2);
-      }
     }
   }
-}
 
-.author__urls_sm{
-  padding: .25em;
-  font-size: 1.75em;
-  display: block;
-  text-align: center;
-  a {
-    color: $link-color;
-    text-decoration: none;
-    margin: 0 0.3em;
-    transition: all $global-transition;
-
-    &:hover {
-      color: $link-color-hover;
-      text-shadow: 0 0 12px rgba(201, 169, 110, 0.28);
-      transform: scale(1.2);
-    }
-  }
-  @include breakpoint($large) {
-    display: none;
-  }
-}
-
-/* Keep profile icons in the same gold on desktop and mobile. */
-.author__urls,
-.author__urls_sm {
   .fa, .fas, .fab, .ai {
     color: $primary-color;
+    margin-right: 0.35em;
   }
 }
