@@ -4,6 +4,9 @@
 .hero {
   position: relative;
   min-height: 100vh;
+  overflow: hidden;
+  isolation: isolate;
+  background: #0b101d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,9 +15,70 @@
   z-index: 1;
 }
 
+/* Reuse the site's nebula artwork; keep the centre quiet behind the text. */
+.hero__cosmos {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 50% 46%, rgba(7, 10, 20, 0.72) 0%, rgba(7, 10, 20, 0.32) 40%, transparent 75%),
+      linear-gradient(180deg, rgba(7, 7, 11, 0.45), transparent 30%, rgba(7, 7, 11, 0.2) 65%, #07070b 100%);
+  }
+}
+
+.hero__nebula {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center 42%;
+  opacity: 0.55;
+  filter: saturate(0.65);
+}
+
+/* Fine celestial chart arcs echo the champagne-gold accent. */
+.hero__orbits {
+  position: absolute;
+  inset: 0;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 78vw;
+    height: 78vw;
+    left: 50%;
+    top: 50%;
+    border: 1px solid rgba(201, 169, 110, 0.16);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg) scaleY(0.58);
+  }
+
+  &::after {
+    width: 92vw;
+    height: 92vw;
+    border-color: rgba(201, 169, 110, 0.09);
+    transform: translate(-50%, -50%) rotate(-25deg) scaleY(0.58);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__nebula { object-position: 58% center; opacity: 0.45; }
+  .hero__orbits::before { width: 160vw; height: 160vw; }
+  .hero__orbits::after { width: 190vw; height: 190vw; }
+}
+
 .hero__inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 42em;
 }
 
@@ -25,7 +89,7 @@
   inset: 0;
   overflow: hidden;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 
 .hero__meteor {
@@ -196,5 +260,6 @@
 }
 
 @media print {
-  .hero__meteors { display: none; }
+  .hero__cosmos, .hero__meteors { display: none; }
+  .hero { background: transparent; }
 }
