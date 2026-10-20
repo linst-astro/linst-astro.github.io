@@ -51,17 +51,16 @@ redirect_from:
 </article>
 <article class="entry"><div class="entry__meta"><span class="entry__year">2026</span><span class="entry__venue">A&amp;A, 707, A20</span></div><div class="entry__main"><div class="entry__title">The MALATANG Survey: Star Formation, Dense Gas, and AGN Feedback in NGC 1068</div><div class="entry__byline"><span class="me">Shuting Lin</span>, Siyi Feng, Zhi-Yu Zhang, et al.</div><div class="entry__links"><a href="https://doi.org/10.1051/0004-6361/202557780" target="_blank" rel="noopener">DOI ↗</a></div>
 <p class="entry__summary">We map dense molecular gas in NGC 1068 with JCMT and compare it with infrared and X-ray emission on sub-kiloparsec scales. Dense gas and star formation follow nearly linear relations, while hot-gas emission reveals different heating regimes across the galaxy. The results suggest that AGN feedback does not dominate star formation regulation at these scales.</p>
-<figure class="entry__figure">
-  <a href="{{ '/images/malatang-figure-3.svg' | relative_url }}" target="_blank" rel="noopener" aria-label="Enlarge MALATANG Figure 3">
-    <img src="{{ '/images/malatang-figure-3.svg' | relative_url }}" alt="Figure 3: Infrared luminosity versus HCN (4–3) and HCO⁺ (4–3) luminosity in NGC 1068." width="936" height="432" loading="lazy" decoding="async">
-  </a>
-  <figcaption>Figure 3. Infrared luminosity versus HCN (4–3) and HCO⁺ (4–3) luminosity in NGC 1068. <a href="https://doi.org/10.1051/0004-6361/202557780" target="_blank" rel="noopener">Lin et al. (2026), A&amp;A, 707, A20</a>. Click to enlarge.</figcaption>
-</figure>
-<figure class="entry__figure">
-  <a href="{{ '/images/malatang-figure-4.png' | relative_url }}" target="_blank" rel="noopener" aria-label="Enlarge MALATANG Figure 4">
-    <img src="{{ '/images/malatang-figure-4.png' | relative_url }}" alt="Figure 4: Star formation rate versus thermal X-ray luminosity of hot gas on sub-kiloparsec scales in NGC 1068." width="960" height="720" loading="lazy" decoding="async">
-  </a>
-  <figcaption>Figure 4. Star formation rate versus thermal X-ray luminosity of hot gas on sub-kiloparsec scales in NGC 1068. <a href="https://doi.org/10.1051/0004-6361/202557780" target="_blank" rel="noopener">Lin et al. (2026), A&amp;A, 707, A20</a>. Click to enlarge.</figcaption>
+<figure class="entry__figure entry__figure--malatang">
+  <div class="entry__figure-triptych">
+    <a href="{{ '/images/malatang-figure-3.svg' | relative_url }}" target="_blank" rel="noopener" aria-label="Enlarge Figure 3, panels a and b">
+      <img src="{{ '/images/malatang-figure-3.svg' | relative_url }}" alt="Figure 3 panels (a) and (b): infrared luminosity versus HCN and HCO⁺ luminosity." width="936" height="432" loading="lazy" decoding="async">
+    </a>
+    <a href="{{ '/images/malatang-figure-4.png' | relative_url }}" target="_blank" rel="noopener" aria-label="Enlarge Figure 4">
+      <img src="{{ '/images/malatang-figure-4.png' | relative_url }}" alt="Figure 4: star formation rate versus hot-gas X-ray luminosity." width="960" height="720" loading="lazy" decoding="async">
+    </a>
+  </div>
+  <figcaption>Left and middle: Figure 3(a–b), infrared–dense gas relations. Right: Figure 4, star formation rate–X-ray luminosity relation. <a href="https://doi.org/10.1051/0004-6361/202557780" target="_blank" rel="noopener">Lin et al. (2026), A&amp;A, 707, A20</a>. Click to enlarge.</figcaption>
 </figure>
 </div></article>
 <article class="entry"><div class="entry__meta"><span class="entry__year">2025</span><span class="entry__venue">ApJL, 992, L15</span></div><div class="entry__main"><div class="entry__title">A Dense Molecular Ringlike Structure in the Gaseous CO Depletion Region G34.74-0.12</div><div class="entry__byline"><span class="me">Shuting Lin</span>, Siyi Feng, Fengwei Xu, et al.</div><div class="entry__links"><a href="https://doi.org/10.3847/2041-8213/ae0579" target="_blank" rel="noopener">DOI ↗</a></div>

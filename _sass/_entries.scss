@@ -187,3 +187,33 @@
     height: auto;
   }
 }
+
+/* Fig. 3 already contains two panels; Fig. 4 completes the three-panel row.
+   Column ratios preserve both original images at the same display height. */
+.entry__figure--malatang {
+  max-width: 760px;
+}
+
+.entry__figure-triptych {
+  display: grid;
+  grid-template-columns: minmax(0, 13fr) minmax(0, 8fr);
+  gap: 0.35em;
+  align-items: center;
+  background: #fff;
+  border-radius: 4px;
+  padding: 0.25em;
+
+  > a {
+    display: block;
+    min-width: 0;
+    &::after { display: none; }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+  }
+}
