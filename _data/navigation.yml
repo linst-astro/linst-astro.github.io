@@ -1,23 +1,12 @@
-# main links links
 main:
   - title: "About Me"
     url: "#about-me"
 
-  - title: "Educations"
+  - title: "Employment"
+    url: "#-employment"
+
+  - title: "Education"
     url: "#-educations"
 
   - title: "Publications"
     url: "#-publications"
-
-  - title: "Observation Proposal"
-    url: "#-proposals"
-
-  - title: "Conference Talks &amp; Posters"
-    url: "#-conferences"
-
-  - title: "Software &amp; Other Skills"
-    url: "#-skills"
-
-
-
-
