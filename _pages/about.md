@@ -42,13 +42,37 @@ redirect_from:
     <div class="entry__links"><a href="https://doi.org/10.3847/1538-3881/ae9d5b" target="_blank" rel="noopener">DOI ↗</a><a href="https://arxiv.org/abs/2608.21978" target="_blank" rel="noopener">arXiv ↗</a></div>
     <p class="entry__summary">Using ALMA observations of 16 young, massive 70 µm-dark clumps, we identify 37 protostellar outflows and investigate shocks traced by SiO emission. The observations reveal that protostellar activity is already underway even in these low-luminosity environments, while additional SiO features may trace undetected protostars or other shock processes.</p>
     <figure class="entry__figure">
-      <a href="{{ '/images/miao-alma-figure-1.png' | relative_url }}" target="_blank" rel="noopener" aria-label="Enlarge MIAO-ALMA Figure 1: G14.23-0.18">
-        <img src="{{ '/images/miao-alma-figure-1.png' | relative_url }}" alt="Figure 1: SiO emission maps, redshifted and blueshifted outflows, and molecular line profiles toward G14.23-0.18." width="1020" height="1320" loading="lazy" decoding="async">
+      <a class="entry__figure-panels-ab" href="https://arxiv.org/html/2608.21978v1#S3.F1" target="_blank" rel="noopener" aria-label="View the original MIAO-ALMA Figure 1 in the paper">
+        <img src="{{ '/images/miao-alma-figure-1.png' | relative_url }}" alt="Figure 1 panels (a) and (b): SiO emission maps and redshifted and blueshifted outflows toward G14.23-0.18." width="1020" height="1320" loading="lazy" decoding="async">
       </a>
-      <figcaption>G14.23−0.18: SiO emission, outflow structure, and molecular line profiles. Figure 1 from <a href="https://arxiv.org/html/2608.21978v1#S3.F1" target="_blank" rel="noopener">Lin et al. (2026), arXiv version</a>. Click to enlarge.</figcaption>
+      <figcaption>G14.23−0.18: SiO emission and outflow structure. Figure 1, panels (a)–(b), from <a href="https://arxiv.org/html/2608.21978v1#S3.F1" target="_blank" rel="noopener">Lin et al. (2026), arXiv version</a>. View the original figure in the paper.</figcaption>
     </figure>
   </div>
 </article>
-<article class="entry"><div class="entry__meta"><span class="entry__year">2026</span><span class="entry__venue">A&amp;A, 707, A20</span></div><div class="entry__main"><div class="entry__title">The MALATANG Survey: Star Formation, Dense Gas, and AGN Feedback in NGC 1068</div><div class="entry__byline"><span class="me">Shuting Lin</span>, Siyi Feng, Zhi-Yu Zhang, et al.</div><div class="entry__links"><a href="https://doi.org/10.1051/0004-6361/202557780" target="_blank" rel="noopener">DOI ↗</a></div></div></article>
-<article class="entry"><div class="entry__meta"><span class="entry__year">2025</span><span class="entry__venue">ApJL, 992, L15</span></div><div class="entry__main"><div class="entry__title">A Dense Molecular Ringlike Structure in the Gaseous CO Depletion Region G34.74-0.12</div><div class="entry__byline"><span class="me">Shuting Lin</span>, Siyi Feng, Fengwei Xu, et al.</div><div class="entry__links"><a href="https://doi.org/10.3847/2041-8213/ae0579" target="_blank" rel="noopener">DOI ↗</a></div></div></article>
-<article class="entry"><div class="entry__meta"><span class="entry__year">2025</span><span class="entry__venue">ApJ, 990, 229</span></div><div class="entry__main"><div class="entry__title">The ALMA Survey of 70 µm Dark High-mass Clumps in Early Stages (ASHES). XII. Unanchored Forked Stream in the Propagating Path of a Protostellar Outflow</div><div class="entry__byline"><span class="me">Shuting Lin</span>, Siyi Feng, Patricio Sanhueza, et al.</div><div class="entry__links"><a href="https://doi.org/10.3847/1538-4357/adf208" target="_blank" rel="noopener">DOI ↗</a></div></div></article>
+<article class="entry"><div class="entry__meta"><span class="entry__year">2026</span><span class="entry__venue">A&amp;A, 707, A20</span></div><div class="entry__main"><div class="entry__title">The MALATANG Survey: Star Formation, Dense Gas, and AGN Feedback in NGC 1068</div><div class="entry__byline"><span class="me">Shuting Lin</span>, Siyi Feng, Zhi-Yu Zhang, et al.</div><div class="entry__links"><a href="https://doi.org/10.1051/0004-6361/202557780" target="_blank" rel="noopener">DOI ↗</a></div>
+<p class="entry__summary">We map dense molecular gas in NGC 1068 with JCMT and compare it with infrared and X-ray emission on sub-kiloparsec scales. Dense gas and star formation follow nearly linear relations, while hot-gas emission reveals different heating regimes across the galaxy. The results suggest that AGN feedback does not dominate star formation regulation at these scales.</p>
+<figure class="entry__figure">
+  <a href="{{ '/images/malatang-figure-2.png' | relative_url }}" target="_blank" rel="noopener" aria-label="Enlarge Figure 2">
+    <img src="{{ '/images/malatang-figure-2.png' | relative_url }}" alt="Integrated intensity maps of CO (1–0), CO (3–2), HCN (4–3), and HCO⁺ (4–3) in NGC 1068." width="2046" height="555" loading="lazy" decoding="async">
+  </a>
+  <figcaption>Integrated intensity maps of CO (1–0), CO (3–2), HCN (4–3), and HCO⁺ (4–3) in NGC 1068. Figure 2 from <a href="https://arxiv.org/html/2512.04891v1#S3.F2" target="_blank" rel="noopener">Lin et al., arXiv version</a>. Click to enlarge.</figcaption>
+</figure>
+</div></article>
+<article class="entry"><div class="entry__meta"><span class="entry__year">2025</span><span class="entry__venue">ApJL, 992, L15</span></div><div class="entry__main"><div class="entry__title">A Dense Molecular Ringlike Structure in the Gaseous CO Depletion Region G34.74-0.12</div><div class="entry__byline"><span class="me">Shuting Lin</span>, Siyi Feng, Fengwei Xu, et al.</div><div class="entry__links"><a href="https://doi.org/10.3847/2041-8213/ae0579" target="_blank" rel="noopener">DOI ↗</a></div>
+<p class="entry__summary">ALMA observations reveal a dense molecular ring in the cold, young star-forming region G34.74−0.12. Traced by several molecular lines, the structure contains about 109 solar masses and shows evidence of slow expansion, without an associated H II region. Its origin remains uncertain, offering a window into the earliest gas dynamics of massive star formation.</p>
+<figure class="entry__figure">
+  <a href="{{ '/images/g34-ring-figure-1.png' | relative_url }}" target="_blank" rel="noopener" aria-label="Enlarge Figure 1">
+    <img src="{{ '/images/g34-ring-figure-1.png' | relative_url }}" alt="Molecular-line maps showing the ringlike structure, dense cores, and outflows in G34.74−0.12." width="1172" height="900" loading="lazy" decoding="async">
+  </a>
+  <figcaption>Molecular-line maps showing the ringlike structure, dense cores, and outflows in G34.74−0.12. Figure 1 from <a href="https://arxiv.org/html/2509.11475v1#S3.F1" target="_blank" rel="noopener">Lin et al., arXiv version</a>. Click to enlarge.</figcaption>
+</figure>
+</div></article>
+<article class="entry"><div class="entry__meta"><span class="entry__year">2025</span><span class="entry__venue">ApJ, 990, 229</span></div><div class="entry__main"><div class="entry__title">The ALMA Survey of 70 µm Dark High-mass Clumps in Early Stages (ASHES). XII. Unanchored Forked Stream in the Propagating Path of a Protostellar Outflow</div><div class="entry__byline"><span class="me">Shuting Lin</span>, Siyi Feng, Patricio Sanhueza, et al.</div><div class="entry__links"><a href="https://doi.org/10.3847/1538-4357/adf208" target="_blank" rel="noopener">DOI ↗</a></div>
+<p class="entry__summary">We discover a forked stream along a young protostellar outflow in G34.74−0.12. Enhanced shock-tracing molecules and elevated gas temperature at the splitting point support a collisional origin. No dust continuum core above 0.1 solar masses is detected at that point, revealing how interactions can shape outflows during the earliest stages of star formation.</p>
+<figure class="entry__figure">
+  <a href="{{ '/images/ashes-xii-figure-4.png' | relative_url }}" target="_blank" rel="noopener" aria-label="Enlarge Figure 4">
+    <img src="{{ '/images/ashes-xii-figure-4.png' | relative_url }}" alt="CO (2–1) velocity-channel maps reveal the forked stream in the redshifted outflow lobe." width="2040" height="1103" loading="lazy" decoding="async">
+  </a>
+  <figcaption>CO (2–1) velocity-channel maps reveal the forked stream in the redshifted outflow lobe. Figure 4 from <a href="https://arxiv.org/html/2507.14564v1#S3.F4" target="_blank" rel="noopener">Lin et al., arXiv version</a>. Click to enlarge.</figcaption>
+</figure>
+</div></article>
