@@ -102,6 +102,10 @@
     width: 100%;
     max-width: 100%;
     height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    /* Half-length portrait; leave roughly one fifth above the head. */
+    object-position: 50% 27%;
     box-sizing: border-box;
     border-radius: 50%;
     border: 1px solid $border-color;
