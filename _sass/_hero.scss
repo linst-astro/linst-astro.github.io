@@ -53,58 +53,6 @@
   max-width: 42em;
 }
 
-/* Two parallel meteors behind the title, repeating every two seconds.
-   Equal X/Y travel keeps the trajectory at 45 degrees on every screen. */
-.hero__meteors {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.hero__meteor {
-  --travel: min(55vw, 55vh);
-  position: absolute;
-  left: 8%;
-  top: 24%;
-  width: clamp(90px, 16vw, 220px);
-  height: 2px;
-  border-radius: 50%;
-  background: linear-gradient(90deg, transparent, rgba(201, 169, 110, 0.45) 55%, #fff);
-  box-shadow: 0 0 8px rgba(201, 169, 110, 0.35);
-  opacity: 0;
-  transform: rotate(45deg);
-  animation: hero-meteor 2s linear infinite;
-
-  &::after {
-    content: '';
-    position: absolute;
-    right: -2px;
-    top: -1px;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 0 0 10px 2px rgba(232, 230, 225, 0.65);
-  }
-
-  &:nth-child(2) {
-    left: 43%;
-    top: 12%;
-  }
-}
-
-@keyframes hero-meteor {
-  0% { opacity: 0; transform: translate(0, 0) rotate(45deg); }
-  10% { opacity: 0.9; }
-  55% { opacity: 0.85; }
-  75%, 100% {
-    opacity: 0;
-    transform: translate(var(--travel), var(--travel)) rotate(45deg);
-  }
-}
-
 .hero__eyebrow {
   margin: 0 0 1.2em;
   font-size: 0.7rem;
@@ -197,7 +145,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .hero__scroll-line::after { animation: none; }
-  .hero__meteor { animation: none; display: none; }
 }
 
 /* ==========================================================================
@@ -231,6 +178,6 @@
 }
 
 @media print {
-  .hero__cosmos, .hero__meteors { display: none; }
+  .hero__cosmos { display: none; }
   .hero { background: transparent; }
 }

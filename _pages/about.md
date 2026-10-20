@@ -51,7 +51,7 @@ redirect_from:
 </article>
 <article class="entry"><div class="entry__meta"><span class="entry__year">2026</span><span class="entry__venue">A&amp;A, 707, A20</span></div><div class="entry__main"><div class="entry__title">The MALATANG Survey: Star Formation, Dense Gas, and AGN Feedback in NGC 1068</div><div class="entry__byline"><span class="me">Shuting Lin</span>, Siyi Feng, Zhi-Yu Zhang, et al.</div><div class="entry__links"><a href="https://doi.org/10.1051/0004-6361/202557780" target="_blank" rel="noopener">DOI ↗</a></div>
 <p class="entry__summary">We map dense molecular gas in NGC 1068 with JCMT and compare it with infrared and X-ray emission on sub-kiloparsec scales. Dense gas and star formation follow nearly linear relations, while hot-gas emission reveals different heating regimes across the galaxy. The results suggest that AGN feedback does not dominate star formation regulation at these scales.</p>
-<figure class="entry__figure entry__figure--malatang">
+<figure class="entry__figure">
   <div class="entry__figure-triptych">
     <a href="{{ '/images/malatang-figure-3.svg' | relative_url }}" target="_blank" rel="noopener" aria-label="Enlarge Figure 3, panels a and b">
       <img src="{{ '/images/malatang-figure-3.svg' | relative_url }}" alt="Figure 3 panels (a) and (b): infrared luminosity versus HCN and HCO⁺ luminosity." width="936" height="432" loading="lazy" decoding="async">

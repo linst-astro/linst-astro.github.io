@@ -143,7 +143,7 @@
   width: 100%;
   min-width: 0;
   margin: 1.2em 0 0;
-  max-width: 100%;
+  max-width: 760px;
 
   > a {
     display: block;
@@ -190,10 +190,6 @@
 
 /* Fig. 3 already contains two panels; Fig. 4 completes the three-panel row.
    Column ratios preserve both original images at the same display height. */
-.entry__figure--malatang {
-  max-width: 760px;
-}
-
 .entry__figure-triptych {
   display: grid;
   grid-template-columns: minmax(0, 13fr) minmax(0, 8fr);
